@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  background-color: #f1f3f6;
+  color: #212121;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+button {
+  margin-top: 10px;
+}
+.cover:hover {
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.product__main {
+  display: flex;
+  flex-flow: row;
+}
+.product__cover {
+  flex-grow: 1;
+  padding: 0px 0px 10px;
+  display: block;
+}
+
+.product__electornics {
+  background-color: #fff;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-top: 1px solid #eaeaea;
+  height: 100%;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+.product__image1 {
+  width: 230px;
+  justify-content: flex-end;
+  /* max-width: 366px; */
+}
+.h2 {
+  word-wrap: break-word;
+  font-size: 30px;
+  line-height: 1.38;
+  font-weight: 400;
+  margin-top: 100px;
+}
+.product__first {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  padding: 28px 10px 124px;
+}
+.product__a {
+  margin-top: 24px;
+  color: #fff;
+}
+.product__button {
+  background: #2874f0;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: box-shadow 0.2s ease;
+  vertical-align: super;
+  cursor: pointer;
+}
+
+.product__main2 {
+  width: calc(100% - 230px);
+}
+.product__cover2 {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+}
+.product__per {
+  display: flex;
+  width: 232;
+}
+.product__best {
+  padding: 25px 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  /* max-height: 366px; */
+  text-align: center;
+  /* margin-top: 100px; */
+  padding-bottom: 366px;
+}
+
+.product__second,
+.product__third,
+.product__fourth,
+.product__fivth {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product__image2,
+.product__image3,
+.product__image4,
+.product__image5 {
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  opacity: 1;
+}
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.text__rs {
+  color: #388e3c;
+  padding-top: 8px;
+  font-size: 16px;
+}
+
+.text__para {
+  opacity: 0.6;
+  padding-top: 7px;
+}
+
+.text__footer {
+  font-size: 12px;
+}
+.cover {
+  height: 200px;
+}

@@ -1,0 +1,43 @@
+.logint__in {
+  width: 13.5rem;
+  padding: 7px 0;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+}
+.logint__in > .MuiSvgIcon-root {
+  margin-right: 10px;
+  color: #2874f0;
+}
+.logint__in > img {
+  margin-right: 10px;
+}
+.logint > hr {
+  margin-left: -10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 108.5%;
+  height: 0.5px;
+  background-color: rgb(233, 233, 233);
+  border: none;
+}
+.logint__in:hover {
+  background-color: rgb(245, 243, 243);
+  cursor: pointer;
+}
+.logint__i {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logint__i > p {
+  color: #2874f0;
+  font-weight: 600;
+  font-size: 14px;
+}
+.logint__i > h2 {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}

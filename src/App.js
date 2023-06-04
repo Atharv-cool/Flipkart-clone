@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import "./App.css";
+import Navbar from "./navbar";
+import Home from "./Home";
+import Loginpage from "./Loginpage";
+import Register from "./Register";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createContext } from "react";
+import Products from "./Products";
+import Carts from "./Carts";
+export const productData = createContext();
 function App() {
+  const [CartData, setCartData] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [apiState, setApiState] = useState("");
+  const getData = (order) => {
+    setCartData((prevData) => [...prevData, order]);
+    console.log(CartData);
+    console.log(apiState);
+  };
+  const deleteItem = (itemId) => {
+    const index = CartData.findIndex((item) => item.id === itemId);
+    if (index !== -1) {
+      const updatedItems = [...CartData];
+      updatedItems.splice(index, 1);
+      setCartData(updatedItems);
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <productData.Provider
+        value={{
+          getData,
+          CartData,
+          deleteItem,
+          isLoggedIn,
+          setIsLoggedIn,
+          apiState,
+          setApiState,
+        }}
+      >
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={[<Navbar />, <Home />]} />
+            <Route path="/login" element={<Loginpage />} />
+            <Route path="/newaccount" element={<Register />} />
+            <Route path="/cart" element={<Carts />} />
+            <Route path="/electronics" element={[<Navbar />, <Products />]} />
+          </Routes>
+        </BrowserRouter>
+      </productData.Provider>
     </div>
   );
 }

@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  background-color: #2874f0;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding: 2px 0px; */
+}
+
+.navbar__logo {
+  /* padding-right: -100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 120px;
+}
+.navbar__logo1 {
+  margin-top: -1px;
+}
+
+.navbar__logo > img {
+  object-fit: contain;
+  width: 75px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.navbar__search > input {
+  border: none;
+  outline: none;
+  width: 36vw;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.navbar__search > .MuiSvgIcon-root {
+  color: #2874f0;
+  padding: 5px;
+  font-size: 25px;
+}
+.navbar__login > button {
+  border: none;
+  outline: none;
+  width: 9vw;
+  color: #2874f0;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.navbar__more,
+.navbar__seller {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar__more,
+.navbar__seller > span {
+  color: white;
+  font-weight: 600px;
+}
+.navbar__more > .MuiSvgIcon-root {
+  color: white;
+}
+.navbar__cart {
+  display: flex;
+  align-items: center;
+  padding-right: 120px;
+}
+
+.navbar__cart > .MuiSvgIcon-root {
+  color: white !important;
+}
+
+.navbar__cart > p {
+  color: white;
+  font-weight: 600px;
+  cursor: pointer;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 8px;
+}
